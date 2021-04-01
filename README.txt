@@ -75,5 +75,5 @@ Program Flow:
 5. Finally main method calls ReceiptService object and calls PrintReceipt method that prints the receipt with Sales Tax and Total Cost.
 
 
-#### Author:
-Tarun Sunkara | [LinkedIn](https://www.linkedin.com/in/tarunkumar-sunkara/)
+Author:
+Tarun Sunkara | LinkedIn: https://www.linkedin.com/in/tarunkumar-sunkara/
