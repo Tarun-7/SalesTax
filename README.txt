@@ -73,3 +73,7 @@ Program Flow:
 4. Decorator design pattern is used to calculate necessary taxes.
 
 5. Finally main method calls ReceiptService object and calls PrintReceipt method that prints the receipt with Sales Tax and Total Cost.
+
+
+#### Author:
+Tarun Sunkara | [LinkedIn](https://www.linkedin.com/in/tarunkumar-sunkara/)
