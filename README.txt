@@ -53,11 +53,23 @@ Output 3:
 Sales Taxes: 6.70
 Total: 74.68
 
-How to run the program
-To run the program, Load all the files into an IDE and run 'main.java' in 'src/Main' folder.
+How to run the program:
 
-Program Flow
+To run the program, Load the files into an IDE and run 'main.java' in 'src/Main' folder.
 
-The main method creates InputParser Object. The InputParser object reads the input files and creates respective Product, ShoppingBasket, ShoppingBasketItem Objects.
-Next the main method creates TaxCalculator Object and calls CalculateTaxes method that calculates taxes and costs of the items.
-Finally main method calls ReceiptService object and calls PrintReceipt method that prints the receipt.
+Assumptions:
+
+1. 'Imported' keyword in input file to set product's import status.
+2.  List of Sales Tax Exemption Items are set in the program. (Service.TaxCalculatorService.ExemptProducts)
+
+Program Flow:
+
+1. The main method prints input files and creates a InputParser Object.
+
+2. The InputParser object reads the input files and creates respective Product, ShoppingBasket, ShoppingBasketItem Objects and return sho.
+
+3. The main method creates TaxCalculator Object and calls CalculateTaxes method that calculates taxes and costs of the items.
+
+4. Decorator design pattern is used to calculate necessary taxes.
+
+5. Finally main method calls ReceiptService object and calls PrintReceipt method that prints the receipt with Sales Tax and Total Cost.

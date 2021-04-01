@@ -6,6 +6,7 @@ import Main.Domain.ShoppingBasketItem;
 
 public class ReceiptService {
 
+    // Prints the Receipt
     public void PrintReceipt(ShoppingBasket shoppingBasket) {
 
         for (int i = 0; i < shoppingBasket.basketItems.size(); i++) {
@@ -15,7 +16,8 @@ public class ReceiptService {
 
             System.out.println(item.getQuantity() + product.getName() + ": " + item.getCost());
         }
+
         System.out.println("Sales Taxes: " + shoppingBasket.getTotalTax());
-        System.out.println("Total: " + shoppingBasket.getTotalCost() + "\n");
+        System.out.println("Total: " + shoppingBasket.getTotalCost());
     }
 }
