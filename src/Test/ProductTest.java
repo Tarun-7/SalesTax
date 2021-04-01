@@ -34,24 +34,24 @@ class ProductTest {
 
     @org.junit.jupiter.api.Test
     void isImported() {
-        assertEquals(false, p.isImported());
+        assertFalse(p.isImported());
     }
 
     @org.junit.jupiter.api.Test
     void setImported() {
         p.setImported(true);
-        assertEquals(true, p.isImported());
+        assertTrue(p.isImported());
     }
 
 
     @org.junit.jupiter.api.Test
     void isExempted() {
-        assertEquals(false, p.isExempted());
+        assertFalse(p.isExempted());
     }
 
     @org.junit.jupiter.api.Test
     void setExempted() {
         p.setExempted(true);
-        assertEquals(true, p.isExempted());
+        assertTrue(p.isExempted());
     }
 }

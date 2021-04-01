@@ -9,9 +9,9 @@ public class ReceiptService {
     // Prints the Receipt
     public void PrintReceipt(ShoppingBasket shoppingBasket) {
 
-        for (int i = 0; i < shoppingBasket.basketItems.size(); i++) {
+        for (int i = 0; i < shoppingBasket.getBasketItems().size(); i++) {
 
-            ShoppingBasketItem item = shoppingBasket.basketItems.get(i);
+            ShoppingBasketItem item = shoppingBasket.getBasketItems().get(i);
             Product product = item.getProduct();
 
             System.out.println(item.getQuantity() + product.getName() + ": " + item.getCost());

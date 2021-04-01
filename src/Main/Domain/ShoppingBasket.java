@@ -6,9 +6,9 @@ import java.util.List;
 public class ShoppingBasket {
 
 
-    public List<ShoppingBasketItem> basketItems;
-    public BigDecimal totalTax;
-    public BigDecimal totalCost;
+    private List<ShoppingBasketItem> basketItems;
+    private BigDecimal totalTax;
+    private BigDecimal totalCost;
 
     public ShoppingBasket(List<ShoppingBasketItem> basketItems) {
         this.basketItems = basketItems;

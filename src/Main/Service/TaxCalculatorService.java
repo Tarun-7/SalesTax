@@ -19,9 +19,9 @@ public class TaxCalculatorService {
 
     public void CalculateTaxes(ShoppingBasket shoppingBasket) {
 
-        for (int i=0; i < shoppingBasket.basketItems.size(); i++) {
+        for (int i=0; i < shoppingBasket.getBasketItems().size(); i++) {
 
-            ShoppingBasketItem item = shoppingBasket.basketItems.get(i);
+            ShoppingBasketItem item = shoppingBasket.getBasketItems().get(i);
             Product product = item.getProduct();
 
             // Checking and setting Exempt status of product

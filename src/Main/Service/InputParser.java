@@ -45,6 +45,7 @@ public class InputParser {
                     ShoppingBasketItem shoppingBasketItem = new ShoppingBasketItem(product, quantity, BigDecimal.ZERO, BigDecimal.ZERO); // Creating ShoppingBasketItem Object
                     shoppingBasketItemsList.add(shoppingBasketItem);
                 }
+                input.close();
 
             } catch (Exception ex)
             {
